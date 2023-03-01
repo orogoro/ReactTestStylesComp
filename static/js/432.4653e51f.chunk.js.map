@@ -1,0 +1,1 @@
+{"version":3,"file":"static/js/432.4653e51f.chunk.js","mappings":"2IAMA,UAJA,WACE,OAAOA,EAAAA,EAAAA,KAACC,EAAAA,GAAQ,GAClB,C","sources":["pages/RegisterPage.jsx"],"sourcesContent":["import { Register } from '../components';\n\nfunction RegisterPage() {\n  return <Register />;\n}\n\nexport default RegisterPage;\n"],"names":["_jsx","Register"],"sourceRoot":""}

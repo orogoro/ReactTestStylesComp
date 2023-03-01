@@ -1,0 +1,1 @@
+{"version":3,"file":"static/js/469.affaf5cb.chunk.js","mappings":"2IAMA,UAJA,WACE,OAAOA,EAAAA,EAAAA,KAACC,EAAAA,EAAS,GACnB,C","sources":["pages/DashboardPage.jsx"],"sourcesContent":["import { Dashboard } from '../components';\n\nfunction DashboardPage() {\n  return <Dashboard />;\n}\n\nexport default DashboardPage;\n"],"names":["_jsx","Dashboard"],"sourceRoot":""}
