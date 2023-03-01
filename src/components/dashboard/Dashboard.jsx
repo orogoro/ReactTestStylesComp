@@ -4,9 +4,13 @@ import { useSelector, useDispatch } from 'react-redux';
 import { authSelector, authOperations } from '../../redux/auth';
 import { dashboardOperations, dashboardSelector } from '../../redux/dashboard';
 
-import { Sidebar, UserPanel } from '../';
+import { Sidebar, UserPanel, Statistic, GameStats } from '../';
 
-import { Container, ContainerDashboard } from './Dashboard.styled';
+import {
+  Container,
+  ContainerDashboard,
+  ContainerStatistic,
+} from './Dashboard.styled';
 
 function Dashboard() {
   const email = useSelector(authSelector.getUserEmail);
@@ -26,6 +30,10 @@ function Dashboard() {
       <Sidebar />
       <ContainerDashboard>
         <UserPanel email={email} />
+        <Statistic statistic={dashboard?.statistic} />
+        <ContainerStatistic>
+          <GameStats />
+        </ContainerStatistic>
       </ContainerDashboard>
     </Container>
   );

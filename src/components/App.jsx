@@ -25,31 +25,31 @@ function App() {
       <Suspense fallback={'...Loading'}>
         <Routes>
           <Route
-            path='register'
+            path="register"
             element={
-              <PublicRoute path='/login' restricted>
+              <PublicRoute path="/login" restricted>
                 <Register />
               </PublicRoute>
             }
           />
           <Route
-            path='login'
+            path="login"
             element={
-              <PublicRoute path='/dashboard' restricted>
+              <PublicRoute path="/dashboard" restricted>
                 <Login />
               </PublicRoute>
             }
           />
           <Route
-            path='dashboard'
+            path="dashboard"
             element={
-              <PrivateRoute path='/login'>
+              <PrivateRoute path="/login">
                 <Dashboard />
               </PrivateRoute>
             }
           />
 
-          <Route path='*' element={<Navigate to='/login' />} />
+          <Route path="*" element={<Navigate to="/login" />} />
         </Routes>
       </Suspense>
       <ToastContainer

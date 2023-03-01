@@ -13,7 +13,7 @@ root.render(
   <React.StrictMode>
     <Provider store={store}>
       <PersistGate loading={'...Loading'} persistor={persistor}>
-        <BrowserRouter basename='/'>
+        <BrowserRouter basename="/ReactTestStylesComp">
           <App />
         </BrowserRouter>
       </PersistGate>

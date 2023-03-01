@@ -11,3 +11,7 @@ export const ContainerDashboard = styled.div`
   margin: 0 48px 0 32px;
   width: 100%;
 `;
+
+export const ContainerStatistic = styled.div`
+  display: flex;
+`;

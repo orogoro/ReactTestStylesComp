@@ -8,6 +8,9 @@ import Dashboard from './dashboard/Dashboard';
 import Sidebar from './sidebar/Sidebar';
 import SidebarItem from './sidebarItem/SidebarItem';
 import UserPanel from './userPanel/UserPanel';
+import Statistic from './statistic/Statistic';
+import StatisticItem from './statisticItem/StatisticItem';
+import GameStats from './gameStats/GameStats';
 
 export {
   Container,
@@ -20,4 +23,7 @@ export {
   Sidebar,
   SidebarItem,
   UserPanel,
+  Statistic,
+  StatisticItem,
+  GameStats,
 };
