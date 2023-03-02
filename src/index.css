@@ -70,3 +70,11 @@ input[type='search']::-webkit-search-results-button,
 input[type='search']::-webkit-search-results-decoration {
   display: none;
 }
+
+/* .recharts-layer .recharts-pie-sector {
+  stroke-linecap: round;
+}
+
+.recharts-sector {
+  stroke-linecap: round;
+} */

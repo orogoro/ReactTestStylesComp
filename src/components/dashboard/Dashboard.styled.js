@@ -14,4 +14,5 @@ export const ContainerDashboard = styled.div`
 
 export const ContainerStatistic = styled.div`
   display: flex;
+  margin: 16px 0;
 `;

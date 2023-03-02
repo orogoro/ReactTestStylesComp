@@ -4,7 +4,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { authSelector, authOperations } from '../../redux/auth';
 import { dashboardOperations, dashboardSelector } from '../../redux/dashboard';
 
-import { Sidebar, UserPanel, Statistic, GameStats } from '../';
+import { Sidebar, UserPanel, Statistic, GameStats, Diagram } from '../';
 
 import {
   Container,
@@ -32,6 +32,7 @@ function Dashboard() {
         <UserPanel email={email} />
         <Statistic statistic={dashboard?.statistic} />
         <ContainerStatistic>
+          <Diagram chartData={dashboard?.chartData} users={dashboard?.users} />
           <GameStats />
         </ContainerStatistic>
       </ContainerDashboard>

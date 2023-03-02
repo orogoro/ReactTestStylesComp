@@ -11,6 +11,13 @@ import UserPanel from './userPanel/UserPanel';
 import Statistic from './statistic/Statistic';
 import StatisticItem from './statisticItem/StatisticItem';
 import GameStats from './gameStats/GameStats';
+import DropDownStats from './dropDownStats/DropDownStats';
+import Diagram from './diagram/Diagram';
+import StackedAreaChart from './stackedAreaChart/StackedAreaChart';
+import Rating from './rating/Rating';
+import RatingItem from './ratingItem/RatingItem';
+import Users from './users/Users';
+import UsersItem from './usersItem/UsersItem';
 
 export {
   Container,
@@ -26,4 +33,11 @@ export {
   Statistic,
   StatisticItem,
   GameStats,
+  DropDownStats,
+  Diagram,
+  StackedAreaChart,
+  Rating,
+  RatingItem,
+  Users,
+  UsersItem,
 };
