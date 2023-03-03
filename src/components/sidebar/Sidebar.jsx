@@ -14,17 +14,13 @@ import { Container, Logo } from './Sidebar.styled';
 function Sidebar() {
   return (
     <Container>
-      <Logo src={logo} alt='logo' />
-      <SidebarItem
-        icon={dashboard}
-        activeIcon={dashboard_active}
-        link={'/dashboard'}
-      />
-      <SidebarItem icon={cards} link={'/'} />
-      <SidebarItem icon={product} link={'/'} />
-      <SidebarItem icon={wear_tear} link={'/'} />
-      <SidebarItem icon={games} link={'/'} />
-      <SidebarItem icon={settings} link={'/'} />
+      <Logo src={logo} alt="logo" />
+      <SidebarItem icon={dashboard} activeIcon={dashboard_active} link={'/'} />
+      <SidebarItem icon={cards} link={'/cards'} />
+      <SidebarItem icon={product} link={'/product'} />
+      <SidebarItem icon={wear_tear} link={'/wear_tear'} />
+      <SidebarItem icon={games} link={'/games'} />
+      <SidebarItem icon={settings} link={'/settings'} />
     </Container>
   );
 }
