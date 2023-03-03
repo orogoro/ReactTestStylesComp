@@ -1,13 +1,15 @@
 {
   "files": {
     "main.css": "/ReactTestStylesComp/static/css/main.bb972057.css",
-    "main.js": "/ReactTestStylesComp/static/js/main.a70d1776.js",
-    "static/js/469.b9e8cc4a.chunk.js": "/ReactTestStylesComp/static/js/469.b9e8cc4a.chunk.js",
-    "static/js/637.48ccfc92.chunk.js": "/ReactTestStylesComp/static/js/637.48ccfc92.chunk.js",
-    "static/js/432.ee366147.chunk.js": "/ReactTestStylesComp/static/js/432.ee366147.chunk.js",
+    "main.js": "/ReactTestStylesComp/static/js/main.cd2b6beb.js",
+    "static/js/469.766e20ac.chunk.js": "/ReactTestStylesComp/static/js/469.766e20ac.chunk.js",
+    "static/js/637.a47eb2f9.chunk.js": "/ReactTestStylesComp/static/js/637.a47eb2f9.chunk.js",
+    "static/js/432.249ae753.chunk.js": "/ReactTestStylesComp/static/js/432.249ae753.chunk.js",
     "static/media/setting.svg": "/ReactTestStylesComp/static/media/setting.7eff8bce2336b49e4c89e9ae400759a2.svg",
     "static/media/wear_tear.svg": "/ReactTestStylesComp/static/media/wear_tear.aa545dc1e00de275859b642c636e5837.svg",
     "static/media/Logo.svg": "/ReactTestStylesComp/static/media/Logo.0ac075f9f96e060acce9f0cf928fb022.svg",
+    "static/media/settingsActive.svg": "/ReactTestStylesComp/static/media/settingsActive.47d30653cddef64a5028101ec776344c.svg",
+    "static/media/settingsNoActive.svg": "/ReactTestStylesComp/static/media/settingsNoActive.ec0a9929e63d64da52ab02bc423f38f1.svg",
     "static/media/product.svg": "/ReactTestStylesComp/static/media/product.41ec48caa2e31a2b089130e6311156fb.svg",
     "static/media/games.svg": "/ReactTestStylesComp/static/media/games.429eba9dd52c6c10ea6ca50317253370.svg",
     "index.html": "/ReactTestStylesComp/index.html",
@@ -19,17 +21,19 @@
     "static/media/settings.svg": "/ReactTestStylesComp/static/media/settings.be283296879beee0baf4efa98cc9819d.svg",
     "static/media/user.svg": "/ReactTestStylesComp/static/media/user.a3d30db27c79fc80bac295064aced08a.svg",
     "static/media/user_light.svg": "/ReactTestStylesComp/static/media/user_light.593f8d5e56588bb00ceb36dc0ed197bb.svg",
+    "static/media/infoTime.svg": "/ReactTestStylesComp/static/media/infoTime.be905caccbf0a5e2a475aa1e7a6de254.svg",
+    "static/media/actionMenu.svg": "/ReactTestStylesComp/static/media/actionMenu.49846c058a674acc34097c7fbe1e6f80.svg",
     "static/media/tabler_check.svg": "/ReactTestStylesComp/static/media/tabler_check.3b45536f89b10b5394fb67fa9139a481.svg",
     "static/media/arrowDownActive.svg": "/ReactTestStylesComp/static/media/arrowDownActive.410fcd8361e733f1d4371b17f45d00c9.svg",
     "static/media/arrow-down.svg": "/ReactTestStylesComp/static/media/arrow-down.13eddb1213426ca9bb88fb3e59338469.svg",
     "main.bb972057.css.map": "/ReactTestStylesComp/static/css/main.bb972057.css.map",
-    "main.a70d1776.js.map": "/ReactTestStylesComp/static/js/main.a70d1776.js.map",
-    "469.b9e8cc4a.chunk.js.map": "/ReactTestStylesComp/static/js/469.b9e8cc4a.chunk.js.map",
-    "637.48ccfc92.chunk.js.map": "/ReactTestStylesComp/static/js/637.48ccfc92.chunk.js.map",
-    "432.ee366147.chunk.js.map": "/ReactTestStylesComp/static/js/432.ee366147.chunk.js.map"
+    "main.cd2b6beb.js.map": "/ReactTestStylesComp/static/js/main.cd2b6beb.js.map",
+    "469.766e20ac.chunk.js.map": "/ReactTestStylesComp/static/js/469.766e20ac.chunk.js.map",
+    "637.a47eb2f9.chunk.js.map": "/ReactTestStylesComp/static/js/637.a47eb2f9.chunk.js.map",
+    "432.249ae753.chunk.js.map": "/ReactTestStylesComp/static/js/432.249ae753.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.bb972057.css",
-    "static/js/main.a70d1776.js"
+    "static/js/main.cd2b6beb.js"
   ]
 }
