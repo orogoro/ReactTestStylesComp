@@ -20,11 +20,25 @@ export const Title = styled.p`
 
   &:first-child {
     margin-right: 100px;
+
+    @media screen and (max-width: 1440px) {
+      margin-right: 80px;
+    }
   }
   &:nth-child(2) {
     margin-right: 100px;
+
+    @media screen and (max-width: 1440px) {
+      margin-right: 80px;
+    }
   }
+
   &:nth-child(9) {
     margin-right: 30px;
+
+    @media screen and (max-width: 1440px) {
+      /* margin-right: 20px; */
+      margin-left: 20px;
+    }
   }
 `;

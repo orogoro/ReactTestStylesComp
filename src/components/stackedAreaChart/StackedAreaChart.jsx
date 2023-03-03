@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react';
 import {
   AreaChart,
   Area,
@@ -8,6 +9,16 @@ import {
 } from 'recharts';
 
 function StackedAreaChart({ chartData }) {
+  const [width, setWidth] = useState(window.innerWidth);
+  const desctopSize = width < 1920;
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWidth(window.innerWidth);
+    };
+    window.addEventListener('resize', handleResize);
+  }, []);
+
   const data = chartData?.map(item => {
     const yyyy = item.date.slice(0, 4);
     const dd = item.date.slice(-2);
@@ -19,7 +30,7 @@ function StackedAreaChart({ chartData }) {
 
   return (
     <AreaChart
-      width={900}
+      width={desctopSize ? 600 : 900}
       height={250}
       data={data}
       margin={{

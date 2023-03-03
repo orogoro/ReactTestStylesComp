@@ -7,6 +7,10 @@ export const Container = styled.div`
   padding: 24px 32px;
   width: 75%;
   border-radius: 4px;
+
+  @media screen and (max-width: 1440px) {
+    width: 71%;
+  }
 `;
 
 export const ContainerRate = styled.div`
@@ -51,7 +55,7 @@ export const NavModalDiv = styled.div`
       props.active ? arrowDownActive : arrow_down});
     position: absolute;
     right: -20px;
-    top: 0;
+    top: 1px;
 
     background-size: 20px;
     background-repeat: no-repeat;

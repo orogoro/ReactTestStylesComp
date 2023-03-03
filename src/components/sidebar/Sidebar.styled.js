@@ -7,6 +7,10 @@ export const Container = styled.div`
   width: 84px;
   padding: 14px 18px;
   background-color: #242731;
+
+  @media screen and (max-width: 1440px) {
+    width: 70px;
+  }
 `;
 
 export const Logo = styled.img`
