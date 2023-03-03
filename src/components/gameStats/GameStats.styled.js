@@ -7,6 +7,7 @@ export const Container = styled.div`
   padding: 24px 32px;
   margin-left: 16px;
   width: 25%;
+  border-radius: 4px;
 `;
 
 export const ContainerPie = styled.div`

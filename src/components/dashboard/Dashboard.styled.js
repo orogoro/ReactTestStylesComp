@@ -8,7 +8,7 @@ export const Container = styled.div`
 export const ContainerDashboard = styled.div`
   display: flex;
   flex-direction: column;
-  margin: 0 48px 0 32px;
+  margin: 0 48px 24px 32px;
   width: 100%;
 `;
 

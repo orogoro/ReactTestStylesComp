@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { StackedAreaChart, Rating, Users } from '../';
+import { StackedAreaChart, Rating, Users, DropDownDiagram } from '../';
 
 import {
   Container,
@@ -15,7 +15,7 @@ import {
 function Diagram({ chartData, users }) {
   const [active, setActive] = useState(false);
   const [currentValue, setCurrentValue] = useState('Graph');
-  console.log(setCurrentValue);
+
   return (
     <Container>
       <ContainerNav>
@@ -29,11 +29,11 @@ function Diagram({ chartData, users }) {
             <ContainerNavModal active={active}>
               {currentValue}
             </ContainerNavModal>
-            {/* <DropDownStats
+            <DropDownDiagram
               active={active}
               setCurrentValue={setCurrentValue}
               currentValue={currentValue}
-            /> */}
+            />
           </NavModalDiv>
         </ContainerText>
       </ContainerNav>

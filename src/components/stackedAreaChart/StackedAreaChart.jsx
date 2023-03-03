@@ -77,6 +77,7 @@ function StackedAreaChart({ chartData }) {
         strokeWidth={2}
         fill="url(#colorGreen)"
         dot={{ stroke: '#1BBA64', strokeWidth: 2, fill: '#1BBA64' }}
+        isAnimationActive={false}
       />
       <Area
         type="monotone"
@@ -86,6 +87,7 @@ function StackedAreaChart({ chartData }) {
         strokeWidth={2}
         fill="url(#colorRed)"
         dot={{ stroke: '#C52D81', strokeWidth: 2, fill: '#C52D81' }}
+        isAnimationActive={false}
       />
       <Area
         type="monotone"
@@ -95,6 +97,7 @@ function StackedAreaChart({ chartData }) {
         strokeWidth={2}
         fill="url(#colorBlue)"
         dot={{ stroke: '#0F81CE', strokeWidth: 2, fill: '#0F81CE' }}
+        isAnimationActive={false}
       />
     </AreaChart>
   );

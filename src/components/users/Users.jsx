@@ -4,7 +4,6 @@ import { UsersItem } from '../';
 import { Container } from './Users.styled';
 
 function Users({ users }) {
-  console.log(users);
   return (
     <Container>
       {users?.map(({ name, date }) => (

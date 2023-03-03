@@ -25,7 +25,7 @@ const loginUser = createAsyncThunk(
   async (userDate, { rejectWithValue }) => {
     try {
       const response = await authAPI.login(userDate);
-      if (!response.token) {
+      if (!response.token || !response) {
         toast.error(response.message);
         return rejectWithValue(response);
       }

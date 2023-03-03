@@ -18,6 +18,10 @@ import Rating from './rating/Rating';
 import RatingItem from './ratingItem/RatingItem';
 import Users from './users/Users';
 import UsersItem from './usersItem/UsersItem';
+import DropDownDiagram from './dropDownDiagram/DropDownDiagram';
+import GeneralSalesTime from './generalSalesTime/GeneralSalesTime';
+import TableSalesTime from './tableSalesTime/TableSalesTime';
+import TableSalesTimeItem from './tableSalesTimeItem/TableSalesTimeItem';
 
 export {
   Container,
@@ -40,4 +44,8 @@ export {
   RatingItem,
   Users,
   UsersItem,
+  DropDownDiagram,
+  GeneralSalesTime,
+  TableSalesTime,
+  TableSalesTimeItem,
 };

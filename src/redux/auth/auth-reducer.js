@@ -16,7 +16,7 @@ const user = createReducer(initialUserState, {
     return initialUserState;
   },
   [fetchCurrentUser.fulfilled]: (state, { payload }) => {
-    state.email = payload.email;
+    state.email = payload?.email;
   },
 });
 

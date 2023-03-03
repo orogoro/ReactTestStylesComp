@@ -4,20 +4,25 @@ import arrowDownActive from '../../images/svg/arrowDownActive.svg';
 
 export const Container = styled.div`
   background-color: #242731;
-  padding: 24px 32px;
-  width: 75%;
+  padding: 24px 0;
   border-radius: 4px;
 `;
 
-export const ContainerRate = styled.div`
+export const NavTitle = styled.div`
   display: flex;
-  margin-top: 24px;
+  align-items: center;
+`;
+
+export const InfoIcon = styled.img`
+  width: 24px;
+  margin-left: 14px;
 `;
 
 export const ContainerNav = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 0 32px;
 `;
 
 export const ContainerNavTitle = styled.p`
@@ -26,17 +31,15 @@ export const ContainerNavTitle = styled.p`
   line-height: 24px;
   color: #ffffff;
 `;
+
 export const ContainerText = styled.div`
   display: flex;
   align-items: center;
 `;
 
-export const ContainerNavText = styled.p`
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 16px;
-  color: rgba(255, 255, 255, 0.6);
-  margin-right: 16px;
+export const ContainerNavImg = styled.img`
+  width: 24px;
+  margin-right: 9px;
 `;
 
 export const NavModalDiv = styled.div`

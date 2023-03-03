@@ -4,7 +4,14 @@ import { useSelector, useDispatch } from 'react-redux';
 import { authSelector, authOperations } from '../../redux/auth';
 import { dashboardOperations, dashboardSelector } from '../../redux/dashboard';
 
-import { Sidebar, UserPanel, Statistic, GameStats, Diagram } from '../';
+import {
+  Sidebar,
+  UserPanel,
+  Statistic,
+  GameStats,
+  Diagram,
+  GeneralSalesTime,
+} from '../';
 
 import {
   Container,
@@ -16,7 +23,6 @@ function Dashboard() {
   const email = useSelector(authSelector.getUserEmail);
   const dashboard = useSelector(dashboardSelector.getDashboard);
   const dispatch = useDispatch();
-  console.log(dashboard);
 
   useEffect(() => {
     if (!email) {
@@ -35,6 +41,7 @@ function Dashboard() {
           <Diagram chartData={dashboard?.chartData} users={dashboard?.users} />
           <GameStats />
         </ContainerStatistic>
+        <GeneralSalesTime data={dashboard?.general_sales_time} />
       </ContainerDashboard>
     </Container>
   );

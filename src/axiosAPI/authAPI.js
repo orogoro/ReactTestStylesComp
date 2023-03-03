@@ -24,7 +24,6 @@ async function login(credentials) {
   try {
     const { data } = await axios.post('/signin', credentials);
     token.set(data.token);
-    console.log(data);
     return data;
   } catch (error) {
     console.log(error);
