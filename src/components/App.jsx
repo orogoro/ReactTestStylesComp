@@ -25,7 +25,16 @@ function App() {
       <Suspense fallback={<MainLoader />}>
         <Routes>
           <Route
-            path="/register"
+            path="/"
+            element={
+              <PrivateRoute path="/login">
+                <Dashboard />
+              </PrivateRoute>
+            }
+          />
+
+          <Route
+            path="register"
             element={
               <PublicRoute path="/login" restricted>
                 <Register />
@@ -33,19 +42,11 @@ function App() {
             }
           />
           <Route
-            path="/login"
+            path="login"
             element={
-              <PublicRoute path="/dashboard" restricted>
+              <PublicRoute path="/" restricted>
                 <Login />
               </PublicRoute>
-            }
-          />
-          <Route
-            path="/dashboard"
-            element={
-              <PrivateRoute path="/login">
-                <Dashboard />
-              </PrivateRoute>
             }
           />
 
