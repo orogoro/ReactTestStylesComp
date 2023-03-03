@@ -1,5 +1,8 @@
 import { useState } from 'react';
+import { useSelector } from 'react-redux';
 import { StackedAreaChart, Rating, Users, DropDownDiagram } from '../';
+
+import { dashboardSelector } from '../../redux/dashboard';
 
 import {
   Container,
@@ -10,9 +13,11 @@ import {
   ContainerText,
   ContainerNavModal,
   NavModalDiv,
+  Loading,
 } from './Diagram.styled';
 
 function Diagram({ chartData, users }) {
+  const loading = useSelector(dashboardSelector.getLoader);
   const [active, setActive] = useState(false);
   const [currentValue, setCurrentValue] = useState('Graph');
 
@@ -38,9 +43,13 @@ function Diagram({ chartData, users }) {
         </ContainerText>
       </ContainerNav>
       <ContainerRate>
-        <StackedAreaChart chartData={chartData} />
+        {chartData?.length !== 0 && !loading ? (
+          <StackedAreaChart chartData={chartData} />
+        ) : (
+          <Loading>Loading...</Loading>
+        )}
         <Rating />
-        <Users users={users} />
+        {users?.length !== 0 && <Users users={users} />}
       </ContainerRate>
     </Container>
   );

@@ -67,3 +67,11 @@ export const ContainerNavModal = styled.p`
   color: ${props => (props.active ? '#81C2FF' : '#ffffff')};
   transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 `;
+
+export const Loading = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  width: 900px;
+`;

@@ -4,7 +4,7 @@ import infoTime from '../../images/svg/infoTime.svg';
 import settingsNoActive from '../../images/svg/settingsNoActive.svg';
 import settingsActive from '../../images/svg/settingsActive.svg';
 
-import { TableSalesTime } from '../';
+import { TableSalesTime, DropDownTable } from '../';
 
 import {
   Container,
@@ -40,9 +40,7 @@ function GeneralSalesTime({ data }) {
             <ContainerNavModal active={active}>
               Table settings
             </ContainerNavModal>
-            {/* <DropDownStats
-              active={active}
-            /> */}
+            <DropDownTable active={active} />
           </NavModalDiv>
         </ContainerText>
       </ContainerNav>

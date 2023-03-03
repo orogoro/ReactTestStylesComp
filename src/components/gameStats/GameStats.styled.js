@@ -134,3 +134,8 @@ export const StatsText = styled.p`
     background-color: ${props => props.color};
   }
 `;
+
+export const Loading = styled.div`
+  margin: 20px auto;
+  font-size: 20px;
+`;

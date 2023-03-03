@@ -7,7 +7,7 @@ import { useDispatch } from 'react-redux';
 
 import { authOperations } from '../redux/auth';
 
-import { Container, PrivateRoute, PublicRoute } from './';
+import { Container, PrivateRoute, PublicRoute, MainLoader } from './';
 
 const Dashboard = lazy(() => import('../pages/DashboardPage'));
 const Login = lazy(() => import('../pages/LoginPage'));
@@ -22,7 +22,7 @@ function App() {
 
   return (
     <Container>
-      <Suspense fallback={'...Loading'}>
+      <Suspense fallback={<MainLoader />}>
         <Routes>
           <Route
             path="register"

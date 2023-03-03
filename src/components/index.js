@@ -22,6 +22,8 @@ import DropDownDiagram from './dropDownDiagram/DropDownDiagram';
 import GeneralSalesTime from './generalSalesTime/GeneralSalesTime';
 import TableSalesTime from './tableSalesTime/TableSalesTime';
 import TableSalesTimeItem from './tableSalesTimeItem/TableSalesTimeItem';
+import DropDownTable from './dropDownTable/DropDownTable';
+import MainLoader from './mainLoader/MainLoader';
 
 export {
   Container,
@@ -48,4 +50,6 @@ export {
   GeneralSalesTime,
   TableSalesTime,
   TableSalesTimeItem,
+  DropDownTable,
+  MainLoader,
 };

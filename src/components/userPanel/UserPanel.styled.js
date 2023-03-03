@@ -43,3 +43,23 @@ export const Text = styled.p`
   margin-left: 12px;
   color: #ffffff;
 `;
+
+export const ButtonLogOut = styled.button`
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 24px;
+
+  margin-right: 10px;
+  padding: 4px 13px;
+  border: 1px solid #8941ff;
+  background-color: #8941ff;
+  border-radius: 8px;
+  color: #fff;
+
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+
+  &:hover {
+    background-color: transparent;
+  }
+`;

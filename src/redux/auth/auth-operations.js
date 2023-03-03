@@ -63,6 +63,7 @@ const fetchCurrentUser = createAsyncThunk(
       const response = await authAPI.currentUser(persistedToken);
       return response;
     } catch (error) {
+      toast.error('Something went wrong');
       console.log(error);
     }
   }
