@@ -11,8 +11,7 @@ const registerUser = createAsyncThunk(
         toast.error('User already exist');
         return rejectWithValue(response);
       }
-
-      toast.success('Welcome');
+      toast.success('User created successfully');
       return response;
     } catch (error) {
       return rejectWithValue(error);

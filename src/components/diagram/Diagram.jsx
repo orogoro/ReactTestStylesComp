@@ -26,7 +26,7 @@ function Diagram({ chartData, users }) {
       <ContainerNav>
         <ContainerNavTitle>Game Stats</ContainerNavTitle>
         <ContainerText>
-          <ContainerNavText>Location</ContainerNavText>
+          <ContainerNavText>Data type</ContainerNavText>
           <NavModalDiv
             onClick={() => setActive(prevState => !prevState)}
             active={active}

@@ -34,18 +34,19 @@ function App() {
           />
 
           <Route
-            path="register"
-            element={
-              <PublicRoute path="/login" restricted>
-                <Register />
-              </PublicRoute>
-            }
-          />
-          <Route
             path="login"
             element={
               <PublicRoute path="/" restricted>
                 <Login />
+              </PublicRoute>
+            }
+          />
+
+          <Route
+            path="register"
+            element={
+              <PublicRoute path="/" restricted>
+                <Register />
               </PublicRoute>
             }
           />

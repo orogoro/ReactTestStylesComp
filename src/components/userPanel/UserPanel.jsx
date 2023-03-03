@@ -1,6 +1,6 @@
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 
-import { authOperations } from '../../redux/auth';
+import { authOperations, authSelector } from '../../redux/auth';
 
 import user_light from '../../images/svg/user_light.svg';
 
@@ -15,14 +15,17 @@ import {
 } from './UserPanel.styled';
 
 function UserPanel({ email }) {
+  const isLogin = useSelector(authSelector.getIsLoggedIn);
   const dispatch = useDispatch();
   return (
     <Container>
       <Title>Dashboard</Title>
       <ContainerUser>
-        <ButtonLogOut onClick={() => dispatch(authOperations.logOutUser())}>
-          Log Out
-        </ButtonLogOut>
+        {isLogin && (
+          <ButtonLogOut onClick={() => dispatch(authOperations.logOutUser())}>
+            Log Out
+          </ButtonLogOut>
+        )}
         <ContainerIcon>
           <Icon src={user_light} alt="user_light" />
         </ContainerIcon>

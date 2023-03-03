@@ -43,7 +43,7 @@ function GameStats() {
           <ContainerNav>
             <ContainerNavTitle>Game Stats</ContainerNavTitle>
             <ContainerText>
-              <ContainerNavText>Data type</ContainerNavText>
+              <ContainerNavText>Location</ContainerNavText>
               <NavModalDiv
                 onClick={() => setActive(prevState => !prevState)}
                 active={active}

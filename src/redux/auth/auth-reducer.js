@@ -30,10 +30,13 @@ const token = createReducer(null, {
 });
 
 const isLoggedIn = createReducer(false, {
-  [registerUser.fulfilled]: () => true,
   [loginUser.fulfilled]: () => true,
   [logOutUser.fulfilled]: () => false,
   [fetchCurrentUser.fulfilled]: () => true,
+});
+
+const isRegister = createReducer(false, {
+  [registerUser.fulfilled]: () => true,
 });
 
 const loader = createReducer(false, {
@@ -51,6 +54,7 @@ const authReducer = combineReducers({
   token,
   isLoggedIn,
   loader,
+  isRegister,
 });
 
 export { authReducer };
