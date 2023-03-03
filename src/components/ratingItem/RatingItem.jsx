@@ -1,3 +1,5 @@
+import { toast } from 'react-toastify';
+
 import {
   Container,
   Label,
@@ -7,14 +9,27 @@ import {
   RateText,
 } from './RatingItem.styled';
 
-function RatingItem({ color, id, checked }) {
+function RatingItem({ color, id, checked, onChange, value }) {
+  let bool = false;
+  const onChangeInput = e => {
+    bool = !bool;
+
+    if (value === false && bool === true) {
+      toast.error('No such data');
+      return;
+    }
+
+    onChange(e.target.value);
+  };
+
   return (
     <Container>
       <InputRadio
+        onChange={onChangeInput}
         type="checkbox"
         id={`${id}`}
         name="happy"
-        // value="yes"
+        value={value}
         color={color}
         className="radio__input"
         defaultChecked={checked}

@@ -8,7 +8,7 @@ import {
   Tooltip,
 } from 'recharts';
 
-function StackedAreaChart({ chartData }) {
+function StackedAreaChart({ chartData, activeDiagtam }) {
   const [width, setWidth] = useState(window.innerWidth);
   const desctopSize = width < 1920;
 
@@ -66,7 +66,6 @@ function StackedAreaChart({ chartData }) {
           fontWeight: '400',
           lineHeight: '12px',
         }}
-        // interval={0}
       />
       <YAxis
         tickLine={false}
@@ -80,36 +79,42 @@ function StackedAreaChart({ chartData }) {
         }}
       />
       <Tooltip />
-      <Area
-        type="monotone"
-        dataKey="green"
-        stackId="1"
-        stroke=" #1BBA64"
-        strokeWidth={2}
-        fill="url(#colorGreen)"
-        dot={{ stroke: '#1BBA64', strokeWidth: 2, fill: '#1BBA64' }}
-        isAnimationActive={false}
-      />
-      <Area
-        type="monotone"
-        dataKey="red"
-        stackId="1"
-        stroke="#C52D81"
-        strokeWidth={2}
-        fill="url(#colorRed)"
-        dot={{ stroke: '#C52D81', strokeWidth: 2, fill: '#C52D81' }}
-        isAnimationActive={false}
-      />
-      <Area
-        type="monotone"
-        dataKey="blue"
-        stackId="1"
-        stroke="#0F81CE"
-        strokeWidth={2}
-        fill="url(#colorBlue)"
-        dot={{ stroke: '#0F81CE', strokeWidth: 2, fill: '#0F81CE' }}
-        isAnimationActive={false}
-      />
+      {activeDiagtam.green && (
+        <Area
+          type="monotone"
+          dataKey="green"
+          stackId="1"
+          stroke=" #1BBA64"
+          strokeWidth={2}
+          fill="url(#colorGreen)"
+          dot={{ stroke: '#1BBA64', strokeWidth: 2, fill: '#1BBA64' }}
+          isAnimationActive={false}
+        />
+      )}
+      {activeDiagtam.red && (
+        <Area
+          type="monotone"
+          dataKey="red"
+          stackId="1"
+          stroke="#C52D81"
+          strokeWidth={2}
+          fill="url(#colorRed)"
+          dot={{ stroke: '#C52D81', strokeWidth: 2, fill: '#C52D81' }}
+          isAnimationActive={false}
+        />
+      )}
+      {activeDiagtam.blue && (
+        <Area
+          type="monotone"
+          dataKey="blue"
+          stackId="1"
+          stroke="#0F81CE"
+          strokeWidth={2}
+          fill="url(#colorBlue)"
+          dot={{ stroke: '#0F81CE', strokeWidth: 2, fill: '#0F81CE' }}
+          isAnimationActive={false}
+        />
+      )}
     </AreaChart>
   );
 }

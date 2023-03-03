@@ -20,6 +20,11 @@ function Diagram({ chartData, users }) {
   const loading = useSelector(dashboardSelector.getLoader);
   const [active, setActive] = useState(false);
   const [currentValue, setCurrentValue] = useState('Graph');
+  const [activeDiagtam, setActiveDiagtam] = useState({
+    green: true,
+    blue: true,
+    red: true,
+  });
 
   return (
     <Container>
@@ -44,11 +49,14 @@ function Diagram({ chartData, users }) {
       </ContainerNav>
       <ContainerRate>
         {chartData?.length !== 0 && !loading ? (
-          <StackedAreaChart chartData={chartData} />
+          <StackedAreaChart
+            chartData={chartData}
+            activeDiagtam={activeDiagtam}
+          />
         ) : (
           <Loading>Loading...</Loading>
         )}
-        <Rating />
+        <Rating setActiveDiagtam={setActiveDiagtam} />
         {users?.length !== 0 && <Users users={users} />}
       </ContainerRate>
     </Container>
