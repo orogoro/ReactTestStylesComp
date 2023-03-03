@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ReactTestStylesComp/static/css/main.bb972057.css",
-    "main.js": "/ReactTestStylesComp/static/js/main.9af287f6.js",
+    "main.js": "/ReactTestStylesComp/static/js/main.1b08c450.js",
     "static/js/469.b2df685f.chunk.js": "/ReactTestStylesComp/static/js/469.b2df685f.chunk.js",
     "static/js/637.37ba8145.chunk.js": "/ReactTestStylesComp/static/js/637.37ba8145.chunk.js",
     "static/js/432.46425a0c.chunk.js": "/ReactTestStylesComp/static/js/432.46425a0c.chunk.js",
@@ -27,13 +27,13 @@
     "static/media/arrowDownActive.svg": "/ReactTestStylesComp/static/media/arrowDownActive.410fcd8361e733f1d4371b17f45d00c9.svg",
     "static/media/arrow-down.svg": "/ReactTestStylesComp/static/media/arrow-down.13eddb1213426ca9bb88fb3e59338469.svg",
     "main.bb972057.css.map": "/ReactTestStylesComp/static/css/main.bb972057.css.map",
-    "main.9af287f6.js.map": "/ReactTestStylesComp/static/js/main.9af287f6.js.map",
+    "main.1b08c450.js.map": "/ReactTestStylesComp/static/js/main.1b08c450.js.map",
     "469.b2df685f.chunk.js.map": "/ReactTestStylesComp/static/js/469.b2df685f.chunk.js.map",
     "637.37ba8145.chunk.js.map": "/ReactTestStylesComp/static/js/637.37ba8145.chunk.js.map",
     "432.46425a0c.chunk.js.map": "/ReactTestStylesComp/static/js/432.46425a0c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.bb972057.css",
-    "static/js/main.9af287f6.js"
+    "static/js/main.1b08c450.js"
   ]
 }
